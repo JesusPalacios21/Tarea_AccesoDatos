@@ -3,8 +3,7 @@
 //Input (HTML) > procesar >PDF
 //require_once dirname(__FILE__).'/../vendor/autoload.php';
 require_once '../../vendor/autoload.php'; //Cargamos el autoload de composer
-
-require_once '../../app/models/Mascota.php'; //Modelo de la entidad Mascota
+require_once __DIR__. '/../../app/models/Mascota.php'; //Modelo de la entidad Mascota
 
 use Spipu\Html2Pdf\Html2Pdf; //Core = nucleo de la libreria
 use Spipu\Html2Pdf\Exception\Html2PdfException; //Identificacion de excepciones

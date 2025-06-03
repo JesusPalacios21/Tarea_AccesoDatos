@@ -1,7 +1,7 @@
 <?php
 
-require_once '../config/Database.php';
-require_once '../entities/Mascota.entidad.php';
+require_once __DIR__ . '/../config/Database.php';
+require_once __DIR__ . '/../entities/Mascota.entidad.php';
 
 /**
  * Esta clase contiene la logica para interactuar con la BD

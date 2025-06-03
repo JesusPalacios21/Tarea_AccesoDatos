@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,7 +23,8 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-    th, td {
+    th,
+    td {
       border: 1px solid #ddd;
       padding: 10px;
       text-align: center;
@@ -50,6 +52,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <h1>Reporte de Mascotas</h1>
@@ -74,18 +77,19 @@
       </tr>
     </thead>
     <tbody>
-      <?php foreach($listaMascotas as $mascota): ?>
+      <?php foreach ($listaMascotas as $mascota): ?>
         <tr>
-          <td><?php echo $mascota->__GET('idmascota'); ?></td>
-          <td><?php echo $mascota->__GET('nombre'); ?></td>
-          <td><?php echo $mascota->__GET('tipo'); ?></td>
-          <td><?php echo $mascota->__GET('color'); ?></td>
-          <td><?php echo $mascota->__GET('genero'); ?></td>
-          <td><?php echo $mascota->__GET('idpropietario'); ?></td>
+          <td><?php echo $mascota['idmascota']; ?></td>
+          <td><?php echo $mascota['nombre']; ?></td>
+          <td><?php echo $mascota['tipo']; ?></td>
+          <td><?php echo $mascota['color']; ?></td>
+          <td><?php echo $mascota['genero']; ?></td>
+          <td><?php echo $mascota['propietario']; ?></td>                                       
         </tr>
       <?php endforeach; ?>
     </tbody>
   </table>
 
 </body>
+
 </html>
