@@ -74,38 +74,16 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>1</td>
-        <td>Firu</td>
-        <td>Perro</td>
-        <td>Negro</td>
-        <td>Macho</td>
-        <td>Juan</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Pelusa</td>
-        <td>Gato</td>
-        <td>Blanco</td>
-        <td>Hembra</td>
-        <td>María</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Toby</td>
-        <td>Perro</td>
-        <td>Marrón</td>
-        <td>Macho</td>
-        <td>Carlos</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Luna</td>
-        <td>Gata</td>
-        <td>Gris</td>
-        <td>Hembra</td>
-        <td>Lucía</td>
-      </tr>
+      <?php foreach($listaMascotas as $mascota): ?>
+        <tr>
+          <td><?php echo $mascota->__GET('idmascota'); ?></td>
+          <td><?php echo $mascota->__GET('nombre'); ?></td>
+          <td><?php echo $mascota->__GET('tipo'); ?></td>
+          <td><?php echo $mascota->__GET('color'); ?></td>
+          <td><?php echo $mascota->__GET('genero'); ?></td>
+          <td><?php echo $mascota->__GET('idpropietario'); ?></td>
+        </tr>
+      <?php endforeach; ?>
     </tbody>
   </table>
 
